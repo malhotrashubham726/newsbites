@@ -12,7 +12,6 @@ import {
 
 export default class App extends Component {
   pageSize=5;
-  //apiKey="301b0c63f4ff4f539ea3b7e4a5c2636f";
   apiKey=process.env.REACT_APP_NEWS_API
 
   state = {
@@ -29,7 +28,7 @@ export default class App extends Component {
       <>
         <Router>
           <div>
-            <Navbar/>
+            <Navbar title="NewsBites"/>
             <LoadingBar
             color='#f11946'
             height={5}
